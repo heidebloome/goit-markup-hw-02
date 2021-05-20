@@ -4,6 +4,7 @@
   --blue-color: #2196f3;
   --logo-black-color: #000000;
   --white-color: #ffffff;
+  --white-color-opacity60: rgba(255, 255, 255, 0.6);
   --background-black-color: #2f303a;
   --background-grey-color: #f5f4fa;
 }
@@ -44,7 +45,7 @@ body {
   list-style: none;
 }
 
-.nav-list a {
+.nav-list .link {
   color: var(--heading-black-color);
   text-decoration: none;
 }
@@ -53,13 +54,13 @@ body {
   color: var(--blue-color);
 }
 
-.contact-list a {
+.contact-list .link {
   color: inherit;
   text-decoration: none;
 }
 
-.header a:hover,
-.header a:focus {
+.header .link:hover,
+.header .link:focus {
   color: var(--blue-color);
 }
 
@@ -70,7 +71,7 @@ body {
   list-style: none;
 }
 
-.button {
+.portfolio-buttons .button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -90,7 +91,7 @@ body {
   background-color: var(--blue-color);
 }
 
-.portfolio-list h2 {
+.portfolio-list .title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -99,7 +100,7 @@ body {
   color: var(--heading-black-color);
 }
 
-.portfolio-list p {
+.portfolio-list .description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -111,8 +112,8 @@ body {
   background-color: var(--background-black-color);
 }
 
-.footer a:hover,
-.footer a:focus {
+.footer .link:hover,
+.footer .link:focus {
   color: var(--blue-color);
 }
 
@@ -132,5 +133,52 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white-color-opacity60);
+}
+
+/* первая страница */
+
+/* секция "герой" */
+
+.hero {
+  background-color: var(--background-black-color);
+}
+
+.hero .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.hero .button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+/* секция "наши преимущества" */
+
+.advantages-list {
+  list-style: none;
+}
+
+.advantages .sub-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--heading-black-color);
 }
