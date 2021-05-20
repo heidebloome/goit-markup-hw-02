@@ -5,6 +5,7 @@
   --logo-black-color: #000000;
   --white-color: #ffffff;
   --background-black-color: #2f303a;
+  --background-grey-color: #f5f4fa;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   color: var(--text-grey-color);
 }
 
-/* хедер */
+/* лого */
 
 .logo {
   font-family: Raleway;
@@ -28,8 +29,14 @@ body {
   color: var(--logo-black-color);
 }
 
+.logo-footer {
+  color: var(--white-color);
+}
+
+/* хедер */
+
 .nav-list,
-.contact-list {
+.header .contact-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -54,4 +61,76 @@ body {
 .header a:hover,
 .header a:focus {
   color: var(--blue-color);
+}
+
+/* страница с портфолио */
+
+.portfolio-buttons,
+.portfolio-list {
+  list-style: none;
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--heading-black-color);
+  background-color: var(--background-grey-color);
+
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.portfolio-list h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--heading-black-color);
+}
+
+.portfolio-list p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* футер */
+
+.footer {
+  background-color: var(--background-black-color);
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: var(--blue-color);
+}
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+}
+
+.footer .contact-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
