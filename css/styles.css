@@ -1,3 +1,57 @@
+:root {
+  --heading-black-color: #212121;
+  --text-grey-color: #757575;
+  --blue-color: #2196f3;
+  --logo-black-color: #000000;
+  --white-color: #ffffff;
+  --background-black-color: #2f303a;
+}
+
 body {
   font-family: Roboto, sans-serif;
+  color: var(--text-grey-color);
+}
+
+/* хедер */
+
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--blue-color);
+}
+
+.logo-header {
+  color: var(--logo-black-color);
+}
+
+.nav-list,
+.contact-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--heading-black-color);
+  text-decoration: none;
+}
+
+.nav-list .current-page {
+  color: var(--blue-color);
+}
+
+.contact-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header a:hover,
+.header a:focus {
+  color: var(--blue-color);
 }
