@@ -14,6 +14,10 @@ body {
   color: var(--text-grey-color);
 }
 
+.link {
+  text-decoration: none;
+}
+
 /* лого */
 
 .logo {
@@ -21,7 +25,6 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  text-decoration: none;
 
   color: var(--blue-color);
 }
@@ -47,7 +50,6 @@ body {
 
 .nav-list .link {
   color: var(--heading-black-color);
-  text-decoration: none;
 }
 
 .nav-list .current-page {
@@ -56,7 +58,6 @@ body {
 
 .contact-list .link {
   color: inherit;
-  text-decoration: none;
 }
 
 .header .link:hover,
@@ -64,7 +65,34 @@ body {
   color: var(--blue-color);
 }
 
-/* страница с портфолио */
+/* футер */
+
+.footer {
+  background-color: var(--background-black-color);
+}
+
+.adsress,
+.footer .contact-list {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  font-style: normal;
+  color: var(--white-color);
+}
+
+.footer .contact-list {
+  color: var(--white-color-opacity60);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--blue-color);
+}
+
+/* страница портфолио */
 
 .portfolio-buttons,
 .portfolio-list {
@@ -85,6 +113,7 @@ body {
   cursor: pointer;
 }
 
+.portfolio-buttons .first-button,
 .button:hover,
 .button:focus {
   color: var(--white-color);
@@ -106,37 +135,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* футер */
-
-.footer {
-  background-color: var(--background-black-color);
-}
-
-.footer .link:hover,
-.footer .link:focus {
-  color: var(--blue-color);
-}
-
-.address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--white-color);
-}
-
-.footer .contact-list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--white-color-opacity60);
-}
-
-/* первая страница */
+/* страница студия */
 
 /* секция "герой" */
 
@@ -173,12 +172,44 @@ body {
   list-style: none;
 }
 
-.advantages .sub-title {
+.advantages-list .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: var(--heading-black-color);
+}
+
+/* секция "чем мы занимаемся" */
+
+.our-works-list {
+  list-style: none;
+}
+
+.our-works .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--heading-black-color);
+}
+
+/* секция "наша команда" */
+
+.our-team-list {
+  list-style: none;
+}
+
+.our-team > .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
 
   color: var(--heading-black-color);
 }
