@@ -11,6 +11,8 @@
 
 body {
   font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   color: var(--text-grey-color);
 }
 
@@ -18,10 +20,15 @@ body {
   text-decoration: none;
 }
 
-/* лого */
+.list {
+  list-style: none;
+}
+
+/* ЛОГО */
 
 .logo {
   font-family: Raleway;
+  font-weight: 500;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -37,7 +44,7 @@ body {
   color: var(--white-color);
 }
 
-/* хедер */
+/* ХЕДЕР */
 
 .nav-list,
 .header .contact-list {
@@ -45,19 +52,18 @@ body {
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  list-style: none;
 }
 
 .nav-list .link {
   color: var(--heading-black-color);
 }
 
-.nav-list .current-page {
-  color: var(--blue-color);
-}
-
 .contact-list .link {
   color: inherit;
+}
+
+.nav-list .current-page {
+  color: var(--blue-color);
 }
 
 .header .link:hover,
@@ -65,7 +71,7 @@ body {
   color: var(--blue-color);
 }
 
-/* футер */
+/* ФУТЕР */
 
 .footer {
   background-color: var(--background-black-color);
@@ -92,12 +98,7 @@ body {
   color: var(--blue-color);
 }
 
-/* страница портфолио */
-
-.portfolio-buttons,
-.portfolio-list {
-  list-style: none;
-}
+/* СТРАНИЦА ПОРТФОЛИО */
 
 .portfolio-buttons .button {
   font-family: inherit;
@@ -135,7 +136,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* страница студия */
+/* СТРАНИЦА СТУДИЯ */
 
 /* секция "герой" */
 
@@ -168,10 +169,6 @@ body {
 
 /* секция "наши преимущества" */
 
-.advantages-list {
-  list-style: none;
-}
-
 .advantages-list .title {
   font-weight: 700;
   font-size: 14px;
@@ -184,10 +181,6 @@ body {
 
 /* секция "чем мы занимаемся" */
 
-.our-works-list {
-  list-style: none;
-}
-
 .our-works .title {
   font-weight: 700;
   font-size: 36px;
@@ -199,10 +192,6 @@ body {
 }
 
 /* секция "наша команда" */
-
-.our-team-list {
-  list-style: none;
-}
 
 .our-team > .title {
   font-weight: 700;
